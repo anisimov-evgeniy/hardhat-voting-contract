@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/evgeniy/WebstormProjects/blockchain/voting-app/contracts/Voting.sol": {
-      "lastModificationDate": 1716069433700,
+    "/Users/evgeniy/WebstormProjects/blockchain/voting-app/hardhat-voting-contract/contracts/Voting.sol": {
+      "lastModificationDate": 1716074636576,
       "contentHash": "f150907dd916c9a4c717a67c0677f2ce",
       "sourceName": "contracts/Voting.sol",
       "solcConfig": {
