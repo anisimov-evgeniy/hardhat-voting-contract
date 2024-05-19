@@ -39,7 +39,7 @@ export interface VotingInterface extends utils.Interface {
   functions: {
     "addCandidate(string)": FunctionFragment;
     "candidates(uint256)": FunctionFragment;
-    "getAllVotesOfCandiates()": FunctionFragment;
+    "getAllVotesOfCandidates()": FunctionFragment;
     "getRemainingTime()": FunctionFragment;
     "getVotingStatus()": FunctionFragment;
     "vote(uint256)": FunctionFragment;
@@ -52,7 +52,7 @@ export interface VotingInterface extends utils.Interface {
     nameOrSignatureOrTopic:
       | "addCandidate"
       | "candidates"
-      | "getAllVotesOfCandiates"
+      | "getAllVotesOfCandidates"
       | "getRemainingTime"
       | "getVotingStatus"
       | "vote"
@@ -70,7 +70,7 @@ export interface VotingInterface extends utils.Interface {
     values: [PromiseOrValue<BigNumberish>]
   ): string;
   encodeFunctionData(
-    functionFragment: "getAllVotesOfCandiates",
+    functionFragment: "getAllVotesOfCandidates",
     values?: undefined
   ): string;
   encodeFunctionData(
@@ -101,7 +101,7 @@ export interface VotingInterface extends utils.Interface {
   ): Result;
   decodeFunctionResult(functionFragment: "candidates", data: BytesLike): Result;
   decodeFunctionResult(
-    functionFragment: "getAllVotesOfCandiates",
+    functionFragment: "getAllVotesOfCandidates",
     data: BytesLike
   ): Result;
   decodeFunctionResult(
@@ -160,7 +160,7 @@ export interface Voting extends BaseContract {
       overrides?: CallOverrides
     ): Promise<[string, BigNumber] & { name: string; voteCount: BigNumber }>;
 
-    getAllVotesOfCandiates(
+    getAllVotesOfCandidates(
       overrides?: CallOverrides
     ): Promise<[Voting.CandidateStructOutput[]]>;
 
@@ -193,7 +193,7 @@ export interface Voting extends BaseContract {
     overrides?: CallOverrides
   ): Promise<[string, BigNumber] & { name: string; voteCount: BigNumber }>;
 
-  getAllVotesOfCandiates(
+  getAllVotesOfCandidates(
     overrides?: CallOverrides
   ): Promise<Voting.CandidateStructOutput[]>;
 
@@ -226,7 +226,7 @@ export interface Voting extends BaseContract {
       overrides?: CallOverrides
     ): Promise<[string, BigNumber] & { name: string; voteCount: BigNumber }>;
 
-    getAllVotesOfCandiates(
+    getAllVotesOfCandidates(
       overrides?: CallOverrides
     ): Promise<Voting.CandidateStructOutput[]>;
 
@@ -262,7 +262,7 @@ export interface Voting extends BaseContract {
       overrides?: CallOverrides
     ): Promise<BigNumber>;
 
-    getAllVotesOfCandiates(overrides?: CallOverrides): Promise<BigNumber>;
+    getAllVotesOfCandidates(overrides?: CallOverrides): Promise<BigNumber>;
 
     getRemainingTime(overrides?: CallOverrides): Promise<BigNumber>;
 
@@ -294,7 +294,7 @@ export interface Voting extends BaseContract {
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
 
-    getAllVotesOfCandiates(
+    getAllVotesOfCandidates(
       overrides?: CallOverrides
     ): Promise<PopulatedTransaction>;
 

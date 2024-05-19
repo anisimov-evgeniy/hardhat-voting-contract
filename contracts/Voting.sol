@@ -46,7 +46,7 @@ contract Voting {
         voters[msg.sender] = true;
     }
 
-    function getAllVotesOfCandiates() public view returns (Candidate[] memory){
+    function getAllVotesOfCandidates() public view returns (Candidate[] memory){
         return candidates;
     }
 
