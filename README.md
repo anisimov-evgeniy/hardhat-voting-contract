@@ -1,5 +1,5 @@
 # Hardhat Voting Project
-Works with voting-frontend
+Works with voting-react
 
 This project deploys a voting contract (mainnet network - https://docs.bnbchain.org/docs/hardhat-new/)
 
